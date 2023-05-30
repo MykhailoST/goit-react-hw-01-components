@@ -1,5 +1,12 @@
-// import user from './Profile';
-// import user from 'path/to/user.json;
+import Profile from './Profile/Profile';
+import user from './Profile/user.json';
+
+import Statistics from './Statistics/Statistics';
+import data from './Statistics/data.json';
+
+import FriendList from './FriendList/FriendList';
+// import FriendListItem from './FriendList/FriendListItem';
+import friends from './FriendList/friends.json';
 
 export const App = () => {
   return (
@@ -13,14 +20,16 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      {/* <Profile
-  username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}
-/> */}
-      React homework template
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      <Statistics title="Upload stats" stats={data} />
+      {/* <Statistics stats={data} /> */}
+      <FriendList friends={friends} />;
     </div>
   );
 };

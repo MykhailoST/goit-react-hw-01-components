@@ -1,3 +1,3 @@
-<ul class="friend-list">
-  <!-- Довільна кіл-сть FriendListItem -->
-</ul>
+export default function friendList() {
+  return <ul class="friend-list"></ul>;
+}
