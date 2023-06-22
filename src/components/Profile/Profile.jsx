@@ -1,3 +1,5 @@
+import css from './Profile.module.css';
+
 export default function profile({ username, tag, location, avatar, stats }) {
   return (
     <div class="profile">
